@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /*AQUI ESTOU DIZENDO QUE TODO "P" QUE ESTA NA DIV 
+        SERA ESCONDIDO, PORQUE O "P" É FILHO DA DIV, PORQUE ESTA 
+        DENTRO DELA*/
+            display: none;
+        }
+
+        div:hover > p { /* AQUI ESTOU DIZENDO QUE O "P" QUANDO O 
+        MOUSE PASSAR SOBRE A DIV FICARA COM A COR VERMELHA E TODOS 
+        OS ESTILOS QUE DEI PARA ELE*/
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover { /*AQUI EUTOU DIZENDO QUE QUANDO PASSAR O MOUSE A DIV
+            DICARA VERMELHA*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

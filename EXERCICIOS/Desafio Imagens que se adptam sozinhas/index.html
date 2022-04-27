@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente aumentar o tamanho 
+        da sua janela para aproveitar a melhor experiência &#128526 <!--Esses numeros é um emoji-->
+    </p>
+    <picture>
+        <!--Todos os <source> tem que estar na ordem de cima para baixo, comça imagem grande, media e pequena.-->
+        <source media="(max-width: 795px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Paisagem">
+    </picture>
+</body>
+</html>
